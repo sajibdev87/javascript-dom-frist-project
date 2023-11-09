@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> some text </h1>
+    <ul id ="item">
+
+    </ul>
+    <div id="container">
+        <article class="blog">
+            <h3 id="tow">my blog -1</h3>
+            <p> apa Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore voluptatum neque dicta doloremque quas, corporis temporibus voluptas, ratione, dignissimos ea officia consequuntur aspernatur eveniet nihil vitae. Eos aspernatur quas corrupti.</p>
+        </article>
+        <article class="blog">
+            <h3 id class="three">my blog -2</h3>
+            <p>Minima cupiditate quam aperiam eligendi temporibus assumenda tempore pariatur officia maiores repudiandae impedit, in voluptates placeat odio necessitatibus quisquam, nihil, facere id. Quae ipsam incidunt unde temporibus nam velit harum!</p>
+        </article>
+        <article class="blog">
+            <h3 id class="secound">my blog -3</h3>
+            <p>Optio officia ad facere inventore atque asperiores culpa quidem tempora dolorum facilis, quibusdam magnam similique quasi, quam illum ipsa tempore temporibus, quos commodi provident. Asperiores ab voluptas quo maiores itaque?</p>
+        </article>
+
+    </div>
+    <script> 
+        
+
+            const article=document.createElement('article');
+            article.classList.add('blog')
+            const h3 = document.createElement('h3');
+            h3.innerText='my new Blog -4';
+            const p = document.createElement('p');
+            p.innerText='$$ Optio officia ad facere inventore atque asperiores culpa quidem tempora dolorum facilis, quibusdam magnam similique ';
+            article.appendChild(h3)
+            article.appendChild(p)
+            const div = document.getElementById('container');
+            div.appendChild(article);
+            // article.innerHTML=h3;
+
+            const articeles=document.getElementsByClassName('blog');
+            for(const articel of articeles){
+            articel.style.border='2px solid green'
+            articel.style.margin = '20px'
+            articel.style.padding='20px'
+         }
+          
+             const li = document.createElement('li');
+        li.innerText='this element is created by us'
+        const ul =document.getElementById('item')
+        // console.log(ul);
+        ul.appendChild(li)
+
+             // const student ={
+        // name:'sajib',
+        // id:43,
+        // age:45,
+        // adderss:'comolapur',
+        // }
+        // console.log(student.id);
+        // console.log(student.adderss);
+
+        // const secoundTitle=document.getElementsById('tow');
+        // console.log(secoundTitle);
+
+        // const secoundTitle=document.getElementById('tow');
+        // secoundTitle.style.backgroundColor='green'
+
+       
+        // const secoundTitle=document.getElementById('tow');
+        // secoundTitle.innerText="OUR NEW TEXT will be added"
+        // secoundTitle.style.backgroundColor='green',
+        // secoundTitle.style.padding='20px'
+        // console.log(secoundTitle);
+       
+        // const secoundTitle=document.getElementById('tow');
+        // console.log(secoundTitle.getAttribute('ID'));
+        // secoundTitle.innerText="OUR NEW TEXT will be added"
+        // secoundTitle.style.backgroundColor='green',
+        // secoundTitle.style.padding='20px'
+        // console.log(secoundTitle);
+    
+
+        //  const tags = document.getElementsByName('h3');
+        //  console.log(tags);
+
+        //  const tags = document.getElementsByTagName('h3');
+        //  for(const tag of tags){
+        //     console.log(tag.innerText);
+
+        // const articels =document.getElementsByClassName('blog');
+        // console.log(articels);
+
+        // const articels =document.getElementsByClassName('blog')
+        // console.log(articels);
+        // for(const art of articels){
+        //     console.log(art.innerText);
+        // }
+
+        // const articeles=document.getElementsByClassName('blog');
+        //  for(const articel of articeles){
+        //     articel.style.border='2px solid gray'
+        //     articel.style.margin = '20px'
+        //     articel.style.padding='20px'
+        //  }
+        
+
+        //  const pares = document.getElementsByTagName('p');
+        //  for(const para of pares){
+        //     console.log(para.innerText);
+        //  }
+
+        // const selector = document.querySelector('.blog p')
+        // console.log(selector);
+
+        // const selector = document.querySelectorAll('.blog p')
+        // console.log(selector);
+
+   
+       
+    </script> 
+</body>
+</html>
