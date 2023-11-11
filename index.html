@@ -39,6 +39,7 @@
             const div = document.getElementById('container');
             div.appendChild(article);
             // article.innerHTML=h3;
+            div.insertBefore(article, div.firstChild)
 
             const articeles=document.getElementsByClassName('blog');
             for(const articel of articeles){
